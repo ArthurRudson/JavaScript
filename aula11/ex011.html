@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sua Nacionalidade</h1>
+    Digite o seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="naci()">
+    <div id="nac">
+
+    </div>
+    <script>
+        function naci() {
+            var na = window.document.querySelector('#pais')
+            var nac = window.document.querySelector('#nac')
+            nac.innerHTML = `<p>Seu país é ${na} </p>`
+            if ( na =! 'Brasil') {
+                nac.innerHTML += `<p>Você e Brasileiro</p>`
+            } else {
+                nac.innerHTML += `Você e estragiro`
+            }
+            
+        }
+    </script>
+</body>
+</html>
