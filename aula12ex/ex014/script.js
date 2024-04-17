@@ -5,10 +5,13 @@ function carregar(){
     var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas`
     if (hora >= 0 && hora < 12 ) {
-        img.src = 'imagem/manha.jpg'
+        img.src = `imagem/manhaa.png`
+        document.body.style.background = '#e2cd9f'
     } else if (hora >= 12 && hora < 18) {
-        img.src = 'imagem/tarde.jpg'
+        img.src = `imagem/tardee.png`
+        document.body.style.background = '#b9846f'
     } else {
-        img.src = 'imagem/noite.jpg'
+        img.src = 'imagem/noite.png'
+        document.body.style.background = '#515154'
     }
 }
